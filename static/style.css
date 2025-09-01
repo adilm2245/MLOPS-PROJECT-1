@@ -1,0 +1,110 @@
+/* ----------- Global Reset ----------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------- Typography ----------- */
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #fdfdfd, #f2f6fc); /* light clean gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #222; /* dark text on light background */
+}
+
+/* Headings more stylish */
+h1, h2, label {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    color: #1a1a1a; /* strong dark for contrast */
+}
+
+/* Container (form box) */
+.container {
+    background: #ffffff; /* pure white card */
+    color: #222; /* dark text */
+    padding: 30px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 750px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.08); /* softer shadow */
+}
+
+/* Heading Accent */
+.container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0077b6; /* fresh modern blue accent */
+    text-transform: uppercase;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333; /* readable on white */
+}
+
+/* Inputs & selects */
+input[type="number"], select {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    outline: none;
+    background: #f9f9f9;
+    color: #222;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 6px rgba(0,119,182,0.3);
+}
+
+/* Button stylish */
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #0077b6; /* blue */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #023e8a;
+    box-shadow: 0 0 12px rgba(0,119,182,0.4);
+}
+
+/* Prediction Result Box */
+#predictionResult {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Success vs Cancel contrast */
+.result-success {
+    background: #90ee90; /* light green */
+    color: #064e06; /* dark green text */
+}
+
+.result-cancel {
+    background: #ffb3b3; /* light red */
+    color: #8b0000; /* dark red text */
+}
