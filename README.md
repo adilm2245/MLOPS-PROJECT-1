@@ -20,3 +20,20 @@ Containerization: Docker support for consistent deployment.
 CI/CD: Jenkins pipeline for automated build, test, and deployment.
 
 Configuration Management: Centralized YAML & Python configs for flexibility.
+
+
+MLOPS-PROJECT-1
+│── application.py        # Flask application entry point
+│── Dockerfile            # Docker image definition
+│── Jenkinsfile           # CI/CD pipeline definition
+│── requirements.txt      # Python dependencies
+│── setup.py              # Package setup script
+│── artifacts/            # Model artifacts (raw, processed, trained models)
+│── config/               # Configurations (YAML + Python configs)
+│── custom_jenkins/       # Custom Jenkins Dockerfile
+│── notebook/             # Jupyter notebook & dataset (train.csv)
+│── pipeline/             # ML pipeline scripts
+│── src/                  # Core source code (data ingestion, preprocessing, etc.)
+│── utils/                # Utility functions
+│── static/               # CSS styles for Flask UI
+│── templates/            # HTML templates for Flask UI
