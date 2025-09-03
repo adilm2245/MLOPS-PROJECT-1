@@ -1,30 +1,31 @@
-# Use a lightweight Python image
-FROM python:slim
 
-# Set environment variables to prevent Python from writing .pyc files & Ensure Python output is not buffered
-ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
+FROM python:3.11-slim
 
-# Set the working directory
-WORKDIR /app
-
-# Install system dependencies required by LightGBM
+# System deps needed by scikit-learn/lightgbm etc.
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libgomp1 \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+  && rm -rf /var/lib/apt/lists/*
 
-# Copy the application code
+WORKDIR /app
+
+# Install only what’s needed first for better layer caching
+# If you have a requirements file, prefer that for reproducibility.
+# Otherwise install your package (non-editable) for production images.
+#COPY pyproject.toml README.md ./
+# If you have a requirements.txt, do:
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Fallback: build from pyproject directly
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir .
+
+# Now copy the rest of the app (after deps to leverage caching)
 COPY . .
 
-# Install the package in editable mode
-RUN pip install --no-cache-dir -e .
+# Recommended: run as non-root (optional, but good practice)
+RUN useradd -m appuser
+USER appuser
 
-# Train the model before running the application
-RUN python pipeline/training_pipeline.py
-
-# Expose the port that Flask will run on
-EXPOSE 5000
-
-# Command to run the app
+# If you expose a web app, set default command (adjust as needed)
 CMD ["python", "application.py"]

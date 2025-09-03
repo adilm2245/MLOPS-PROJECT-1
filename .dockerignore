@@ -1,0 +1,18 @@
+# .dockerignore
+.git
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.log
+.mlruns/
+.notebooks/
+data/
+venv/
+.venv/
+.env
+.env.*
+dist/
+build/
+*.ipynb
