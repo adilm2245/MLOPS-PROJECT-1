@@ -45,40 +45,44 @@ It follows MLOps best practices — including modularized code, experiment track
 
 ## 🧱 Repository Structure
 
+This project follows a structured MLOps approach, separating configuration, source code, utilities, and deployment artifacts for a robust and reproducible machine learning workflow.
+
+## Project Directory Tree
+
+```bash
 MLOPS-PROJECT-1-main/
 │
-├── application.py # Flask web application for inference
-├── Dockerfile # Containerization of the app
-├── Jenkinsfile # CI/CD pipeline configuration
-├── requirements.txt # Python dependencies
-├── setup.py # Package setup file
+├── application.py          # 🌐 Flask web application for model inference.
+├── Dockerfile              # 🐳 Defines the container environment for deployment.
+├── Jenkinsfile             # ⚙️ CI/CD pipeline configuration script.
+├── requirements.txt        # 📦 Project dependencies.
+├── setup.py                # 🏗️ Python package setup file.
 │
 ├── config/
-│ ├── config.yaml # Configuration for ingestion, preprocessing, and model paths
-│ ├── model_params.py # Hyperparameter search configuration
-│ └── paths_config.py # Artifact and file path settings
+│ ├── config.yaml           # ⚙️ Central configuration (ingestion, preprocessing, paths).
+│ ├── model_params.py       # 🔍 Hyperparameter search configuration.
+│ └── paths_config.py       # 📂 Artifact and file path settings.
 │
-├── src/
-│ ├── data_ingestion.py # Data ingestion from GCS and train-test split
-│ ├── data_preprocessing.py # Feature encoding, transformation, and saving processed data
-│ ├── model_training.py # Model training with LightGBM and MLflow logging
-│ ├── custom_exception.py # Custom error handler
-│ ├── logger.py # Centralized logging setup
-│ └── init.py
+├── src/                    # 💻 Core ML Pipeline Logic
+│ ├── data_ingestion.py     # 📥 Data ingestion (GCS) and train-test split.
+│ ├── data_preprocessing.py # 🧹 Feature encoding, transformation, and saving processed data.
+│ ├── model_training.py     # 🧠 Model training (LightGBM) and MLflow logging.
+│ ├── custom_exception.py   # 🚫 Custom error handler.
+│ ├── logger.py             # 📝 Centralized logging setup.
+│ └── __init__.py           # Makes src a Python package.
 │
-├── utils/
-│ └── common_functions.py # Helper utilities (YAML reader, file ops, etc.)
+├── utils/                  # 🛠️ Helper Functions
+│ └── common_functions.py   # Helper utilities (YAML reader, file ops, etc.).
 │
 ├── templates/
-│ └── index.html # Flask front-end
+│ └── index.html            # 🖼️ Flask front-end template.
 │
 ├── static/
-│ └── style.css # Front-end styling
+│ └── style.css             # 🎨 Front-end styling.
 │
-└── artifacts/
+└── artifacts/              # 💾 Output Storage
 ├── models/
-│ └── lgbm_model.pkl # Trained LightGBM model
+│ └── lgbm_model.pkl        # The trained LightGBM model artifact.
 └── processed/
-├── processed_train.csv # Preprocessed training data
-└── processed_test.csv # Preprocessed testing data
-
+    ├── processed_train.csv # Preprocessed training data.
+    └── processed_test.csv  # Preprocessed testing data.
