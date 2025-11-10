@@ -45,3 +45,40 @@ It follows MLOps best practices — including modularized code, experiment track
 
 ## 🧱 Repository Structure
 
+MLOPS-PROJECT-1-main/
+│
+├── application.py # Flask web application for inference
+├── Dockerfile # Containerization of the app
+├── Jenkinsfile # CI/CD pipeline configuration
+├── requirements.txt # Python dependencies
+├── setup.py # Package setup file
+│
+├── config/
+│ ├── config.yaml # Configuration for ingestion, preprocessing, and model paths
+│ ├── model_params.py # Hyperparameter search configuration
+│ └── paths_config.py # Artifact and file path settings
+│
+├── src/
+│ ├── data_ingestion.py # Data ingestion from GCS and train-test split
+│ ├── data_preprocessing.py # Feature encoding, transformation, and saving processed data
+│ ├── model_training.py # Model training with LightGBM and MLflow logging
+│ ├── custom_exception.py # Custom error handler
+│ ├── logger.py # Centralized logging setup
+│ └── init.py
+│
+├── utils/
+│ └── common_functions.py # Helper utilities (YAML reader, file ops, etc.)
+│
+├── templates/
+│ └── index.html # Flask front-end
+│
+├── static/
+│ └── style.css # Front-end styling
+│
+└── artifacts/
+├── models/
+│ └── lgbm_model.pkl # Trained LightGBM model
+└── processed/
+├── processed_train.csv # Preprocessed training data
+└── processed_test.csv # Preprocessed testing data
+
