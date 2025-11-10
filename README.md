@@ -10,26 +10,6 @@
 A complete **end-to-end MLOps pipeline** for predicting hotel reservation cancellations using **LightGBM**, **MLflow**, **Docker**, and **Jenkins**.  
 The system handles data ingestion from Google Cloud Storage (GCS), preprocessing, model training, experiment tracking, and deployment via a Flask web app.
 
----
-
-## 📚 Table of Contents
-
-1. [Overview](#overview)
-2. [Repository Structure](#repository-structure)
-3. [Features](#features)
-4. [Setup and Installation](#setup-and-installation)
-5. [Configuration](#configuration)
-6. [How to Run](#how-to-run)
-7. [Training and Evaluation](#training-and-evaluation)
-8. [Model Serving (Flask App)](#model-serving-flask-app)
-9. [Docker Deployment](#docker-deployment)
-10. [CI/CD Pipeline (Jenkins)](#cicd-pipeline-jenkins)
-11. [MLflow Experiment Tracking](#mlflow-experiment-tracking)
-12. [Notes & Recommendations](#notes--recommendations)
-13. [Contributing](#contributing)
-14. [License & Contact](#license--contact)
-
----
 
 ## 🚀 Overview
 
