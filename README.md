@@ -11,7 +11,7 @@
 ## 🚀 Overview
 
 This project aims to **predict whether a hotel reservation will be cancelled** based on customer and booking features.  
-It follows MLOps best practices — including modularized code, experiment tracking, CI/CD automation, and containerized deployment.
+It follows MLOps best practices including modularized code, experiment tracking, CI/CD automation, and containerized deployment.
 
 ### **Project Hightlighs**
 - End-to-End MLOps Workflow (data → model → deployment)
