@@ -48,7 +48,7 @@ The pipeline follows the modern MLOps lifecycle:
 
 1. Continuous Integration (CI)
 
-Executed via Jenkins:
+*Executed via Jenkins:*
 - Pull latest code
 - Run linting and unit tests
 - Execute training pipeline
