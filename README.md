@@ -112,8 +112,8 @@ MLOPS-PROJECT-1-main/
 ## 🛠️ Local Development & Setup
 1. Clone the Repository
    ```bash
-   git clone https://github.com/Muhammad-Zeerak-Khan/hotel_reservation_project.git
-    cd hotel_reservation_project
+   git clone [(https://github.com/adilm2245/MLOPS-PROJECT-1.git)]
+   cd MLOPS-PROJECT-1
    ```
 
    
