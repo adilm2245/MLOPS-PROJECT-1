@@ -1,4 +1,4 @@
-# 🏨 Hotel Reservation Cancellation Prediction — MLOps Project
+# 🏨 Hotel Reservation Cancellation Prediction MLOps Project
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/Framework-Flask-orange.svg)](https://flask.palletsprojects.com/)
