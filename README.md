@@ -74,35 +74,35 @@ This project follows a structured MLOps approach, separating configuration, sour
 ```bash
 MLOPS-PROJECT-1-main/
 │
-├── application.py          # 🌐 Flask web application for model inference.
-├── Dockerfile              # 🐳 Defines the container environment for deployment.
-├── Jenkinsfile             # ⚙️ CI/CD pipeline configuration script.
-├── requirements.txt        # 📦 Project dependencies.
-├── setup.py                # 🏗️ Python package setup file.
+├── application.py          #  Flask web application for model inference.
+├── Dockerfile              #  Defines the container environment for deployment.
+├── Jenkinsfile             #  CI/CD pipeline configuration script.
+├── requirements.txt        #  Project dependencies.
+├── setup.py                #  Python package setup file.
 │
 ├── config/
-│ ├── config.yaml           # ⚙️ Central configuration (ingestion, preprocessing, paths).
-│ ├── model_params.py       # 🔍 Hyperparameter search configuration.
-│ └── paths_config.py       # 📂 Artifact and file path settings.
+│ ├── config.yaml           #  Central configuration (ingestion, preprocessing, paths).
+│ ├── model_params.py       #  Hyperparameter search configuration.
+│ └── paths_config.py       #  Artifact and file path settings.
 │
-├── src/                    # 💻 Core ML Pipeline Logic
-│ ├── data_ingestion.py     # 📥 Data ingestion (GCS) and train-test split.
-│ ├── data_preprocessing.py # 🧹 Feature encoding, transformation, and saving processed data.
-│ ├── model_training.py     # 🧠 Model training (LightGBM) and MLflow logging.
-│ ├── custom_exception.py   # 🚫 Custom error handler.
-│ ├── logger.py             # 📝 Centralized logging setup.
+├── src/                    #  Core ML Pipeline Logic
+│ ├── data_ingestion.py     #  Data ingestion (GCS) and train-test split.
+│ ├── data_preprocessing.py #  Feature encoding, transformation, and saving processed data.
+│ ├── model_training.py     #  Model training (LightGBM) and MLflow logging.
+│ ├── custom_exception.py   #  Custom error handler.
+│ ├── logger.py             #  Centralized logging setup.
 │ └── __init__.py           # Makes src a Python package.
 │
-├── utils/                  # 🛠️ Helper Functions
+├── utils/                  #  Helper Functions
 │ └── common_functions.py   # Helper utilities (YAML reader, file ops, etc.).
 │
 ├── templates/
-│ └── index.html            # 🖼️ Flask front-end template.
+│ └── index.html            #  Flask front-end template.
 │
 ├── static/
-│ └── style.css             # 🎨 Front-end styling.
+│ └── style.css             #  Front-end styling.
 │
-└── artifacts/              # 💾 Output Storage
+└── artifacts/              #  Output Storage
 ├── models/
 │ └── lgbm_model.pkl        # The trained LightGBM model artifact.
 └── processed/
