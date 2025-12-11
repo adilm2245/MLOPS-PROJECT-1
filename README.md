@@ -26,7 +26,19 @@ It follows MLOps best practices — including modularized code, experiment track
 - Flask API for model inference
 - Google Cloud Platform (GCP) for hosting and scalability
 - Interactive UI for real-time cancellation prediction
----
+
+## 🌐 Live Application (GCP)
+
+Access the deployed application here:
+*[project-link](https://ml-project-661593700688.us-central1.run.app/)*
+
+##🧠 Use Case
+
+The system predicts whether a hotel booking is likely to be Canceled or Not Canceled, helping hotels:
+
+- Reduce last-minute cancellations
+- Optimize overbooking strategies
+- Improve revenue forecasting
 
 ## 🧱 Repository Structure
 
