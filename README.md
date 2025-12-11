@@ -35,6 +35,36 @@ The system predicts whether a hotel booking is likely to be Canceled or Not Canc
 - Optimize overbooking strategies
 - Improve revenue forecasting
 
+## 📊 Dataset
+
+- Source: https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset
+- Type: Binary Classification
+- Target: Booking_Status
+- Goal: Predict whether a reservation will be canceled
+
+## 🧱 Architecture Overview
+
+The pipeline follows the modern MLOps lifecycle:
+
+1. Continuous Integration (CI)
+
+Executed via Jenkins:
+- Pull latest code
+- Run linting and unit tests
+- Execute training pipeline
+- Log metrics & artifacts to MLflow
+- Register best model in MLflow Model Registry
+
+2. Continuous Delivery (CD)
+
+- Build Docker image
+- Push to Google Artifact / Container Registry
+
+3. Deployment
+
+- Deploy Docker image to GCP Cloud Run
+- Auto-update model and API on each pipeline run
+
 ## 🧱 Repository Structure
 
 This project follows a structured MLOps approach, separating configuration, source code, utilities, and deployment artifacts for a robust and reproducible machine learning workflow.
