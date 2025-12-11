@@ -109,3 +109,11 @@ MLOPS-PROJECT-1-main/
     ├── processed_train.csv # Preprocessed training data.
     └── processed_test.csv  # Preprocessed testing data.
 ```
+## 🛠️ Local Development & Setup
+1. Clone the Repository
+   ```bash
+   git clone https://github.com/Muhammad-Zeerak-Khan/hotel_reservation_project.git
+    cd hotel_reservation_project
+   ```
+
+   
