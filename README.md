@@ -18,11 +18,14 @@ The system handles data ingestion from Google Cloud Storage (GCS), preprocessing
 This project aims to **predict whether a hotel reservation will be cancelled** based on customer and booking features.  
 It follows MLOps best practices — including modularized code, experiment tracking, CI/CD automation, and containerized deployment.
 
-### **Key Objectives**
-- Prevent overbooking and revenue loss by forecasting cancellations.
-- Automate data flow from ingestion → preprocessing → model training.
-- Enable reproducibility and scalability through Docker and Jenkins.
-
+### **Project Hightlighs**
+- End-to-End MLOps Workflow (data → model → deployment)
+- MLflow for experiment tracking and model versioning
+- Jenkins CI/CD for automated testing, retraining, Docker builds, and deployment
+- Docker for reproducible environments
+- Flask API for model inference
+- Google Cloud Platform (GCP) for hosting and scalability
+- Interactive UI for real-time cancellation prediction
 ---
 
 ## 🧱 Repository Structure
