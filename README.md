@@ -7,11 +7,6 @@
 [![Jenkins](https://img.shields.io/badge/CI%2FCD-Jenkins-red.svg)](https://www.jenkins.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A complete **end-to-end MLOps pipeline** for predicting hotel reservation cancellations using **LightGBM**, **MLflow**, **Docker**, and **Jenkins**.  
-The system handles data ingestion from Google Cloud Storage (GCS), preprocessing, model training, experiment tracking, and deployment via a Flask web app.
- **Live App URL:** *[project-link](https://ml-project-661593700688.us-central1.run.app/)*
-
-
 
 ## 🚀 Overview
 
