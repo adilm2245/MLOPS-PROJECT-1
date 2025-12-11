@@ -111,9 +111,30 @@ MLOPS-PROJECT-1-main/
 ```
 ## 🛠️ Local Development & Setup
 1. Clone the Repository
+   
    ```bash
-   git clone [(https://github.com/adilm2245/MLOPS-PROJECT-1.git)]
+   git clone https://github.com/adilm2245/MLOPS-PROJECT-1.git
    cd MLOPS-PROJECT-1
    ```
-
+   
+2. Install Dependencies   
+   ```bash
+   pip install -e .
+   ```
+   
+3. Train the Model (with MLflow Tracking)   
+   ```bash
+   python pipeline/training_pipeline.py
+   ```
+   *To launch MLflow UI*
+   ```bash
+   mlflow ui
+   ```
+   Acces at http://127.0.0.1:5000/
+ 4. Run the flask app locally
+    
+   ```bash
+   python application.py
+   ```
+   
    
