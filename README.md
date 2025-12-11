@@ -32,7 +32,7 @@ It follows MLOps best practices — including modularized code, experiment track
 Access the deployed application here:
 *[project-link](https://ml-project-661593700688.us-central1.run.app/)*
 
-##🧠 Use Case
+## 🧠 Use Case
 
 The system predicts whether a hotel booking is likely to be Canceled or Not Canceled, helping hotels:
 
